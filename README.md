@@ -1,1 +1,1 @@
-This blog is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+# Read Me
