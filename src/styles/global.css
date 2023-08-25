@@ -92,6 +92,7 @@ p {
 
 .prose {
 	font-family: 'Atkinson', sans-serif;
+	line-height: 1.4em;
 	font-size: 18px;
 }
 .astro-code{
