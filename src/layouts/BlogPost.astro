@@ -2,69 +2,28 @@
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, category, date, updatedDate, image } = Astro.props;
 ---
 
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} />
-		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
-			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-		</style>
+		<BaseHead title={title}/>
 	</head>
-
 	<body>
 		<Header />
 		<main>
 			<article>
-				<div class="hero-image">
-					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
+				<div class="title">
+					<h1 class="mb-4">{title}</h1>
 				</div>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
+				<div class="data flex justify-between">
+					<div class="flex">
+						<p class="date pr-4 m-0">
+							<FormattedDate date={date} />
 							{
 								updatedDate && (
 									<div class="last-updated-on">
@@ -72,14 +31,47 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 									</div>
 								)
 							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
+						</p>
+						<p class="uppercase m-0">
+							{category}
+						</p>
 					</div>
+
+				</div>
+				<div class="hero-image mt-6 mb-9">
+					{image && <img width={1020} height={510} src={image}/>}
+				</div>
+				<div class="prose">
 					<slot />
+				</div>
+				<hr class="my-6">
+				<div class="pb-4">
+					<a href="/" class="font-semibold">&#60;- Back to Homepage</a>
 				</div>
 			</article>
 		</main>
-		<Footer />
 	</body>
 </html>
+<style>
+	.hero-image img {
+		border: 1px solid #333;
+	}
+	main {
+		max-width: 600px !important;
+	}
+	h1 {
+			font-size: 2.2rem;
+	}
+	.data {
+			font-size: 12px;
+	}
+
+	@media screen and (max-width: 400px) {
+		h1 {
+			font-size: 1.6rem;
+		}
+		.data {
+			font-size: 12px;
+		}
+	}
+</style>

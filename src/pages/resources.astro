@@ -1,22 +1,21 @@
 ---
 import Header from '../components/Header.astro';
 import { SITE_TITLE} from '../consts';
-import {Content as AboutContent} from '../pages/about.md';
+import {Content as ResourcesContent} from '../pages/resources.md';
 import BaseHead from '../components/BaseHead.astro';
 ---
-<!-- TODO: Make a cat button that makes a cat follow you on screen -->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <BaseHead title={SITE_TITLE}/>
+
     </head>
     <body>
         <Header />
         <main class="normal-page">
-            <h1>About</h1>
-            <section class="mt-[1rem]">
-                <AboutContent />
+            <h1>Resources</h1>
+            <section>
+                <ResourcesContent />
             </section>
         </main>
     </body>
