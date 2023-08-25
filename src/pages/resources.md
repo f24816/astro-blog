@@ -1,4 +1,4 @@
-## I. D.O.N.G
+## I. Cool Websites
 [Neocities](neocities.org/)
 
 ## II. Art Resources
