@@ -2,7 +2,7 @@
 title: 'Ce sunt și cum funcționează culorile primare?'
 category: 'art'
 date: '2023-08-25'
-image: 'https://cdn.stocksnap.io/img-thumbs/960w/VYSZEM4UWE.jpg'
+image: 'https://i.postimg.cc/4dPNb7hP/culorileprimare.png'
 ---
 La școală învățăm faptul că culorile primare sunt roșu galben și albastru și că aceste culori sunt într-un fel *principale* pentru că ele pot fii combinate pentru a forma culori secundare, terțiare și toate culorile curcubeului doar amestecându-le pe paletă.
 

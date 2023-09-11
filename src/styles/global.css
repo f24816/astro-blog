@@ -24,7 +24,6 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-size: 100% 600px;
 	background: var(--background);
 	color: var(--text);
 	font-family: 'Inter', sans-serif;
@@ -35,12 +34,15 @@ body {
 	align-items: center;
 }
 main {
-	max-width: 100%;
 	width: 100%;
 	padding-left: 1.0rem;
 	padding-right: 1.2rem;
 	max-width: 380px;
 	padding-bottom: 1rem;
+	padding-top: 1rem;
+}
+.portfolio {
+	max-width: 800px !important;
 }
 .normal-page {
 	max-width: 400px !important;

@@ -1,0 +1,23 @@
+---
+import Header from '../components/Header.astro';
+import { SITE_TITLE} from '../consts';
+import BaseHead from '../components/BaseHead.astro';
+import { Image } from 'astro:assets';
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <BaseHead title={SITE_TITLE}/>
+    </head>
+    <body>
+        <Header />
+        <main class="portfolio">
+            <div class="flex justify-left items-end">
+                <h1>Design Portfolio </h1><h1 class="text-[#5F5F5F] pl-3"> / All</h1>
+            </div>
+            <section>
+                <img src="/portfolio/web1.png" alt="Web Design Portfolio" />
+            </section>
+        </main>
+    </body>
+</html>
