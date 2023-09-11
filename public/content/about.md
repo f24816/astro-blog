@@ -9,3 +9,5 @@ You can find me on:
 [Instagram](https://www.instagram.com/f24816/)
 [Youtube](https://www.youtube.com/@f24816/)
 [Pinterest](https://www.pinterest.com/f24816/)
+[DeviantArt](https://www.deviantart.com/f24816/)
+[Bandcamp](https://f24816.bandcamp.com/)
