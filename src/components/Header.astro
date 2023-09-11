@@ -11,8 +11,8 @@ import HeaderLink from './HeaderLink.astro';
 			<div class="links pt-[2px]">
 				<HeaderLink href="/about">about</HeaderLink>
 				<HeaderLink href="https://form.jotform.com/231973723081356">contact</HeaderLink>
-				<HeaderLink href="/resources">resources</HeaderLink>
 				<HeaderLink href="/portfolio">portfolio</HeaderLink>
+				<HeaderLink href="/resources">resources</HeaderLink>
 			</div>
 		</div>
 		<div class="center-title">
@@ -30,8 +30,8 @@ import HeaderLink from './HeaderLink.astro';
 <div class="burger-menu">
 	<HeaderLink href="/about">about</HeaderLink><br>
 	<HeaderLink href="https://form.jotform.com/231973723081356">contact</HeaderLink><br>
-	<HeaderLink href="/resources">resources</HeaderLink><br>
 	<HeaderLink href="/portfolio">portfolio</HeaderLink><br>
+	<HeaderLink href="/resources">resources</HeaderLink><br>
 </div>
 
 <style>
@@ -87,6 +87,14 @@ import HeaderLink from './HeaderLink.astro';
 		flex: 1;
 		display: flex;
 		justify-content: right;
+	}
+	.logo {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.logo img {
+		width: 20px;
+		height: 20px;
 	}
 	.icons {
 		display: grid;
@@ -156,10 +164,10 @@ import HeaderLink from './HeaderLink.astro';
 		background: #111112;
 
 		position: fixed;
-		top: 4rem;
+		top: 3.7rem;
 		left: 0.5rem;
 		z-index: 101;
-		width: 10rem;
+		width: 6rem;
 		border-radius: 5px;
 
 		text-align: left;
@@ -171,7 +179,7 @@ import HeaderLink from './HeaderLink.astro';
 		font-weight: 500;
 		font-size: 15px;
 		color: #888;
-		line-height: 2.5;
+		line-height: 2;
 		border: 1px solid #222;
 	}
 
