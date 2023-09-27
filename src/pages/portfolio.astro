@@ -3,6 +3,8 @@ import Header from '../components/Header.astro';
 import { SITE_TITLE} from '../consts';
 import BaseHead from '../components/BaseHead.astro';
 import { Image } from 'astro:assets';
+import web1 from "../../public/portfolio/web-1.png";
+import app1 from "../../public/portfolio/app-1.png";
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -14,10 +16,10 @@ import { Image } from 'astro:assets';
         <main class="normal-page max-w-3xl">
             <section>
                 <div class="flex justify-left items-end">
-                    <h1>Portfolio</h1><h1 class="text-[#5F5F5F] pl-3"> / All</h1>
+                    <h1>Portfolio</h1>
                 </div>
-                <img src="/portfolio/web-1.png"/>
-                <img src="/portfolio/app-1.png"/>
+                <Image src={web1} alt="A very cool website!" />
+                <Image src={app1} alt="A very cool app!" />
             </section>
         </main>
     </body>
